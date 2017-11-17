@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(140deg, #A434E7,#E9E740);
+  height: 100vh;
+}
+.headline {
+  margin: 20px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+.headline p {
+  letter-spacing: 0.2em;
+  font-weight: 300;
+}
+
+.text-js {
+  opacity: 0;
+}
+.cursor {
+  display: block;
+  position: absolute;
+  height: 90%;
+  top: 10px;
+  right: -5px;
+  width: 5px;
+  background-color: #fff;
+  z-index: 1;
+  animation: flash 0.8s none infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
